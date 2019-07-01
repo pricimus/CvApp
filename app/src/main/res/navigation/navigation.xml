@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/navigation"
+            app:startDestination="@id/splashFragment">
+
+    <fragment
+            android:id="@+id/splashFragment"
+            android:name="com.greydog.cvapp.SplashFragment"
+            android:label="SplashFragment"
+            tools:layout="@layout/splash_fragment">
+        <action android:id="@+id/action_splashfragment_to_menufragment"
+                app:destination="@id/menuFragment"
+                app:popUpToInclusive="true"
+                app:popUpTo="@id/splashFragment"/>
+    </fragment>
+
+    <fragment
+            android:id="@+id/menuFragment"
+            android:name="com.greydog.cvapp.MenuFragment"
+            android:label="MenuFragment"
+            tools:layout="@layout/menu_fragment">
+        <action android:id="@+id/action_menufragment_to_contactinfofragment"
+                app:destination="@id/contactInfoFragment"
+                app:popUpToInclusive="true"
+                app:popUpTo="@id/splashFragment"/>
+        <action android:id="@+id/action_menufragment_to_headlinefragment"
+                app:destination="@id/headlineFragment"
+                app:popUpToInclusive="true"
+                app:popUpTo="@id/splashFragment"/>
+        <action android:id="@+id/action_menufragment_to_experiencefragment"
+                app:destination="@id/experienceFragment"
+                app:popUpToInclusive="true"
+                app:popUpTo="@id/splashFragment"/>
+    </fragment>
+
+    <fragment
+            android:id="@+id/contactInfoFragment"
+            android:name="com.greydog.cvsections.ContactInfoFragment"
+            android:label="ContactInfoFragment"
+            tools:layout="@layout/contactinfo_fragment">
+    </fragment>
+
+    <fragment
+            android:id="@+id/headlineFragment"
+            android:name="com.greydog.cvsections.HeadlineFragment"
+            android:label="ContactInfoFragment"
+            tools:layout="@layout/headline_fragment">
+    </fragment>
+
+    <fragment
+            android:id="@+id/experienceFragment"
+            android:name="com.greydog.cvsections.ExperienceFragment"
+            android:label="ContactInfoFragment"
+            tools:layout="@layout/experience_fragment">
+    </fragment>
+
+</navigation>

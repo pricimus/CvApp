@@ -1,0 +1,23 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/headline",
+    "headers": {
+      "Content-Type": {
+        "equalTo" : "application/json"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody":
+    {
+      "title" : "Senior Android Developer",
+      "about" : "Experienced mobile developer",
+      "technologies" : "Kotlin"
+    }
+  }
+}

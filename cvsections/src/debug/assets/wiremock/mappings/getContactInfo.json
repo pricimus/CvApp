@@ -1,0 +1,25 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "/contactdetails",
+    "headers": {
+      "Content-Type": {
+        "equalTo" : "application/json"
+      }
+    }
+  },
+  "response": {
+    "status": 200,
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "jsonBody":
+    {
+      "name" : "Ed Price",
+      "addressLines" : [ "123 Street", "London", "W15 2JT" ],
+      "emailAddress" : "ed@greydogconsulting.co.uk",
+      "mobileContact": "0712345678",
+      "linkedin" : "https://www.linkedin.com/in/priceedward/"
+    }
+  }
+}

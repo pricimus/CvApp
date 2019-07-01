@@ -1,0 +1,23 @@
+package com.greydog.cvsections
+
+import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import com.greydog.cvsections.databinding.HeadlineFragmentBinding
+import org.koin.android.viewmodel.ext.android.viewModel
+import com.greydog.extensions.inflateBinding
+
+class HeadlineFragment : Fragment() {
+
+    private val viewModel: HeadlineViewModel by viewModel()
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View {
+
+        return inflateBinding<HeadlineFragmentBinding>(R.layout.headline_fragment, container) { it.vm = viewModel }
+    }
+}
